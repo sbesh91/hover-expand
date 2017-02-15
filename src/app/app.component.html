@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<div class="card-list">  
+  <card 
+    *ngFor="let card of cards"
+    [data]="card"></card>
+</div>

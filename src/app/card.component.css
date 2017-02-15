@@ -1,0 +1,16 @@
+.card-image{
+    z-index:3;
+    border-radius: 3px;        
+}
+
+.card-text{
+    z-index:2;
+    opacity: 0;
+    background: #fff;
+    width:200px;
+    height:300px;    
+    overflow-y: scroll;
+    position: absolute;
+    top:0;
+    left:0;    
+}
