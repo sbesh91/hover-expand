@@ -1,4 +1,10 @@
-<div class="card-image">
+<div 
+    class="card-image"
+    [@dataState]="data.state"
+    (@dataState.start)="animationStarted($event)"
+    (@dataState.done)="animationDone($event)"
+    (mouseenter)="toggleState()"
+    (mouseleave)="toggleState()">
     <img src="http://lorempixel.com/200/300">
 </div>    
 <div class="card-text">
