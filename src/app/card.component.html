@@ -3,8 +3,8 @@
     [@dataState]="data.state"
     (@dataState.start)="animationStarted($event)"
     (@dataState.done)="animationDone($event)"
-    (mouseenter)="toggleState()"
-    (mouseleave)="toggleState()">
+    (mouseenter)="toggleState($event)"
+    (mouseleave)="toggleState($event)">
     <img src="http://lorempixel.com/200/300">
 </div>    
 <div class="card-text">
